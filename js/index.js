@@ -1,4 +1,5 @@
 // Your code goes here
+// -----------------------------------------------------------------------------------------
 //creating variable for nav
 const nav = document.querySelector('.nav-container nav');
 //creating an event listener for a click event
@@ -14,6 +15,8 @@ nav.addEventListener('dblclick', event => {
     }, 2000);
 });
 
+//-----------------------------------------------------------------------------------------
+
 //creating variable for header image of bus
 const busImg = document.querySelector('header img');
 // creating an event listener for mouseover
@@ -25,6 +28,25 @@ busImg.addEventListener('mouseenter', event => {
     // });
     console.log(`Image has been entered`, event.target, event.screenX, event.screenY);
 })
+
+//-----------------------------------------------------------------------------------------
+
+// const text = document.querySelector('.text-content h2');
+// window.addEventListener('scroll', event => {
+//     event.text.style.opacity = '0.2';
+// })
+
+//-----------------------------------------------------------------------------------------
+
+const bigText = document.querySelector('.text-content h2');
+
+bigText.addEventListener('click', event => {
+    event.target.style.fontSize = '5rem';
+    event.target.style.color = 'orange';
+})
+
+
+//-----------------------------------------------------------------------------------------
 
 //create variable for button
 const button = document.querySelectorAll('.destination .btn');
@@ -42,6 +64,8 @@ button.forEach((btn) => {
         }, 500);
     }) 
 });
+
+//-----------------------------------------------------------------------------------------
 
 //create variable for resizeNumber to start at zero
 let count = 0;
